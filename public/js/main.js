@@ -1,16 +1,2 @@
-const backdrop = document.querySelector('.backdrop');
-const sideDrawer = document.querySelector('.mobile-nav');
-const menuToggle = document.querySelector('#side-menu-toggle');
-
-function backdropClickHandler() {
-  backdrop.style.display = 'none';
-  sideDrawer.classList.remove('open');
-}
-
-function menuToggleClickHandler() {
-  backdrop.style.display = 'block';
-  sideDrawer.classList.add('open');
-}
-
-backdrop.addEventListener('click', backdropClickHandler);
-menuToggle.addEventListener('click', menuToggleClickHandler);
+!function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={exports:{},id:moduleId,loaded:!1};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.loaded=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.p="/",__webpack_require__(0)}([function(module,exports,__webpack_require__){__webpack_require__(1),module.exports=__webpack_require__(4)},function(module,exports,__webpack_require__){"use strict";var App=__webpack_require__(2);new App},function(module,exports,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),_require=__webpack_require__(3),STATE=_require.STATE,Client=(_require.STATUS,function(){function Client(){var _this=this;arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};_classCallCheck(this,Client),this.arr=[10,50,0],this.foo=5,this.path="",this.info("local "+STATE+" "+this.path),this.info(this.arr.reduce(function(a,b){return a+b},0)),this.arr.forEach(function(i){_this.info(i*_this.foo)})}return _createClass(Client,[{key:"info",value:function(){var message=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"";console.info(Date.now()+": "+message)}},{key:"wait",value:function(a){for(var _len=arguments.length,args=Array(_len>1?_len-1:0),_key=1;_key<_len;_key++)args[_key-1]=arguments[_key];this.info(a,args)}}]),Client}());module.exports=Client},function(module,exports){"use strict";module.exports={STATE:"LOADING",STATUS:"INIT"}},function(module,exports){}]);
+//# sourceMappingURL=main.js.map
